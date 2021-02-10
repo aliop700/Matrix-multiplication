@@ -16,6 +16,13 @@
 `php artisan test` 
 - Unit tests and Feature Test applied
 
+### Configuration 
+edit the databse config in .env file 
 
+### to Run Project 
+- `git clone https://github.com/aliop700/Matrix-multiplication.git`
+
+- `composer install`
+- `php artisan serve`
 
 
