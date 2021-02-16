@@ -16,6 +16,19 @@ class MultiplyMatrixTest extends TestCase
      */
 
     /** @test */
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        // your code goes here
+    }
+
+    protected function tearDown(): void
+    {
+        parent::tearDown();
+        // your code goes here
+    }
+
     public function number_converter_test()
     {
         $nums = [
@@ -26,6 +39,7 @@ class MultiplyMatrixTest extends TestCase
             '29' => 'AC'
         ];
 
+        dump(NumConverter::convert(1));
         foreach ($nums as $key => $value) {
             $this->assertEquals($value, NumConverter::convert($key));
         }
