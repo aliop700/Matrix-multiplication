@@ -24,7 +24,7 @@ class GetTokenAction
         $credentials = compact('email', 'password');
 
         if (!Auth::Attempt($credentials)) {
-            throw new InvalidCredentialsException('credentials are invalid');
+            throw new InvalidCredentialsException;
         }
 
         $user = User::where('email', $email)->first();
